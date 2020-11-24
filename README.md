@@ -12,8 +12,13 @@ This project depends on the Turtlebot3-package from ROBOTIS. https://github.com/
 The following lines might be necessary to add to the .bashrc-file, for the program to run. 
 
 "
-export GAZEBO_MODEL_PATH=/usr/share/gazebo-7/models:${GAZEBO_MODEL_PATH}
+
+export GAZEBO_MODEL_PATH=/usr/share/gazebo-7/models:${GAZEBO_MODEL_PATH}'
+
 export GAZEBO_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gazebo-7/plugins:${GAZEBO_PLUGIN_PATH}
+
 export TURTLEBOT3_MODEL=burger
+
 source /home/*insert username*/catkin_ws/devel/setup.bash
+
 "
