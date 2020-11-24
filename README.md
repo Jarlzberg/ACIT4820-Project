@@ -1,5 +1,7 @@
 # ACIT4820
 
+Repository for project in ACIT4820 - Applied Robotics and Autonomous Systems
+
 Python-scripts are located in my_test_pkg/src
 
 Use launch-file "start_simulation.launch" to start the world-generator and initiate gazebo. 
