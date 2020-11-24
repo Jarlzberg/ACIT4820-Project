@@ -1,0 +1,19 @@
+<launch>
+<!-- Launch map-server -->
+   <include file="$(find my_test_pkg)/launch/launch_map_server.launch">
+  </include>
+
+<!-- starting crash-server -->
+  <node pkg="my_test_pkg" 
+    type="laser_scan_service.py" 
+    name="start_laser_server_node"  
+    output="screen">
+  </node>
+
+    <!-- starting main-script -->
+  <node pkg="my_test_pkg" 
+    type="main.py" 
+    name="start_main_node"  
+    output="screen">
+  </node>
+</launch>

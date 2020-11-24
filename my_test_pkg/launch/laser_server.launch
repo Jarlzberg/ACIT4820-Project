@@ -1,0 +1,8 @@
+<!-- Will start the laser-sensor service -->
+<launch>
+  <node pkg="my_test_pkg" 
+    type="laser_scan_service.py" 
+    name="start_laser_server_node"  
+    output="screen">
+  </node>
+</launch>

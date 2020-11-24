@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+
+<gazebo reference="base_link">
+    <kp>100000.0</kp>
+    <kd>100000.0</kd>
+    <mu1>10000.0</mu1>
+    <mu2>10000.0</mu2>
+    <material>Gazebo/Grey</material>
+</gazebo>
+
+<robot name="block">
+    <link name="base_link">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <box size="1 1 1"/>
+            </geometry>
+        </visual>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="100" />
+            <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
+        </inertial>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="1 1 1"/>
+            </geometry>
+        </collision>
+
+    </link>
+</robot>
